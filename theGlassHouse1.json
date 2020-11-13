@@ -1,0 +1,155 @@
+{
+  "__metadata__": {
+    "title": "The Glass House",
+    "start": "Path_to_Glass_House"
+  },
+  "Path_to_Glass_House": {
+    "name": "Path_to_Glass_House",
+    "description": "You are on the path to the modernist marvel in New Canaan CT.\nHow did you get here?",
+    "exits": [
+      {
+        "destination": "underground_tunnel",
+        "description": "There are stairs leading down to the underground tunnel."
+      },
+      {
+        "destination": "guest_house",
+        "description": "There is a path that leads to the guest house."
+      },
+      {
+        "destination": "kitchen",
+        "description": "The kitchen is ahead."
+      }
+    ],
+    "items": []
+  },
+  "underground_tunnel": {
+    "name": "underground_tunnel",
+    "description": "You have found the underground tunnel leading to the Guest House.\nIt is darker down here.\nYou get the sense a secret is nearby, but you only see the tunnel from which you came from.",
+    "exits": [
+      {
+        "destination": "Path_to_Glass_House",
+        "description": "There are stairs leading up out of the tunnel."
+      },
+      {
+        "destination": "secretRoom",
+        "description": "A trapdoor was hidden amongst the dust."
+      }
+    ],
+    "items": []
+  },
+  "guest_house": {
+    "name": "guest_house",
+    "description": "The underground tunnel leads you to a secretive, decorative, and completely enclosed Guest House. \nIt's dim and cozy in here.",
+    "exits": [
+      {
+        "destination": "Path_to_Glass_House",
+        "description": "There is a path leading to the Glass House."
+      },
+      {
+        "destination": "Pavillion",
+        "description": "There is a slide that can take you down to the Pavillion in the Pond."
+      }
+    ],
+    "items": []
+  },
+  "Pavillion": {
+    "name": "Pavillion",
+    "description": "There's definitely something large moving in the pond. \nThis part of the estate is more open, so maybe you'd like it here.",
+    "exits": [
+      {
+        "destination": "guest_house",
+        "description": "There is a path leading to the Guest House."
+      },
+      {
+        "destination": "dumbwaiter",
+        "description": "There is a dumbwaiter near the chimney."
+      }
+    ],
+    "items": []
+  },
+  "painting_gallery": {
+    "name": "painting_gallery",
+    "description": "There's a strange painting here on that looks like a switch.",
+    "exits": [
+      {
+        "destination": "simulation",
+        "description": "Fiddle with the switch."
+      },
+      {
+        "destination": "Pavillion",
+        "description": "Go back to the Pavillion."
+      }
+    ],
+    "items": []
+  },
+  "simulation": {
+    "name": "simulation",
+    "description": "You were inside a virtual simulation exploring the Glass House.\n...\nI guess you escaped.",
+    "exits": [],
+    "items": []
+  },
+  "kitchen": {
+    "name": "kitchen",
+    "description": "You've found the kitchen. Everything looks sleek and like I'm not supposed to touch it.",
+    "exits": [
+      {
+        "destination": "Path_to_Glass_House",
+        "description": "There is a door ahead that takes you out of the Glass House."
+      },
+      {
+        "destination": "cylindrical_bathroom",
+        "description": "There is a peculiar bathroom."
+      }
+    ],
+    "items": []
+  },
+  "cylindrical_bathroom": {
+    "name": "cylindrical_bathroom",
+    "description": "You explore the cylindrical bathroom. What are you doing?",
+    "exits": [
+      {
+        "destination": "Pavillion",
+        "description": "Exit down the hill to the Pavillion."
+      },
+      {
+        "destination": "kitchen",
+        "description": "Exit on the right to the kitchen."
+      },
+      {
+        "destination": "secretRoom",
+        "description": "Exit at the bottom."
+      }
+    ],
+    "items": []
+  },
+  "dumbwaiter": {
+    "name": "dumbwaiter",
+    "description": "You crawl into the dumbwaiter. What are you doing?",
+    "exits": [
+      {
+        "destination": "kitchen",
+        "description": "Exit in the kitchen."
+      },
+      {
+        "destination": "secretRoom",
+        "description": "Exit at the bottom of the secret room."
+      }
+    ],
+    "items": []
+  },
+  "secretRoom": {
+    "name": "secretRoom",
+    "description": "You have found the secret room.\nWho thought more Barcelona chairs a good idea?",
+    "exits": [
+      {
+        "destination": "underground_tunnel",
+        "description": "You see a trapdoor with a spider crawling on it."
+      },
+      {
+        "destination": "cylindrical_bathroom",
+        "description": "Get back in the dumbwaiter."
+      }
+    ],
+    "items": []
+  }
+}
